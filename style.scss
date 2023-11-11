@@ -21,7 +21,7 @@ body {
     // text-align: center;
     color: beige;
     gap: .5rem;
-    
+
 }
 
 .main {
@@ -40,7 +40,7 @@ body {
         display: flex;
         align-items: center;
 
-        sub{
+        sub {
             margin-top: .5rem;
             color: rgba(244, 160, 44, .5);
         }
@@ -69,7 +69,7 @@ section {
     margin: 0 .2rem;
     transition: all ease-in-out .2s;
 
-    &:hover{
+    &:hover {
         transform: scale(.9);
     }
 }
@@ -119,14 +119,14 @@ header {
                 a {
                     color: rgb(255, 255, 255);
                     text-decoration: none;
-                    font-size: clamp(5px, 2.5vw, 14px);
+                    font-size: clamp(5px, 2.5vw, 12px);
                     text-transform: capitalize;
                     letter-spacing: 2px;
 
-                    &:hover{
+                    &:hover {
                         color: rgba(245, 243, 243, .8);
                     }
-                    
+
                 }
 
                 #subscribe-btn {
@@ -135,9 +135,9 @@ header {
                     padding: .6rem 2rem;
                     transition: all ease-in-out .2s;
 
-                    &:hover{
+                    &:hover {
                         background: #fff;
-                        color:rgb(244, 160, 44);
+                        color: rgb(244, 160, 44);
                     }
                 }
             }
@@ -152,10 +152,29 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
-    align-items: end;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
     padding: 1.5rem;
     border-radius: 2rem;
+
+    #date {
+        margin-bottom: auto;
+        padding: 1rem 2rem;
+        color: rgb(255, 255, 255);
+        background: rgba(118, 118, 118, 0.5);
+        border-radius: 2rem;
+        font-size: clamp(5px, 2.5vw, 14px);
+    }
+
+    #article-big {
+
+        p {
+            margin-top: .5rem;
+            font-size: clamp(5px, 2.5vw, 14px);
+        }
+    }
 
     button {
         color: #fff;
@@ -166,7 +185,7 @@ header {
 
         transition: all ease-in-out .2s;
 
-        &:hover{
+        &:hover {
             background: rgba(244, 160, 44, 1);
             color: rgb(255, 255, 255);
         }
@@ -189,28 +208,32 @@ header {
         grid-template-columns: 1fr 1.2fr 1.5fr;
         grid-template-rows: 1fr 4fr 3fr 2fr 1fr;
 
+        #date {
+            padding: 1rem;
+        }
+    
 
         nav {
             height: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
-    
+
             ul {
                 display: flex;
-    
+
                 li {
                     list-style: none;
                     margin: 0 .5rem;
 
-                    a{
+                    a {
                         font-size: clamp(5px, 2.5vw, 10px);
                     }
-    
+
                 }
             }
         }
-        
+
     }
 
 
@@ -235,7 +258,7 @@ header {
 
         #logo {
             height: 8.4vh;
-             font-size: clamp(16px, 2.5vw, 10.5px);
+            font-size: clamp(16px, 2.5vw, 10.5px);
         }
 
         #head-line {
@@ -252,7 +275,7 @@ header {
 
         }
     }
-    
+
 }
 
 
